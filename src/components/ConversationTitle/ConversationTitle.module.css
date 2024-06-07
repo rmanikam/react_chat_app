@@ -1,0 +1,56 @@
+.conversationTitle {
+  display: flex;
+}
+.addBtn {
+  width: 30px;
+  height: 30px;
+  margin-top: 13px;
+  margin-left: 10px;
+  margin-bottom: 42px;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.popup {
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 28px;
+  left: 590px;
+  top: 21px;
+  background-color: black;
+  z-index: 50;
+}
+
+.outerContainer {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.popupContent {
+  position: relative;
+}
+
+.close {
+  color: red;
+  position: absolute;
+  right: 14px;
+  top: -14px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+.innerContainer {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import LeftContainer from "./components/LeftContainer/LeftContainer";
+import RightContainer from "./components/RightContainer/RightContainer";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LeftContainer />,
+      children: [
+        {
+          path: "/chat/:id",
+          element: <RightContainer />,
+        },
+      ],
+    },
+  ]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router} />
+      <ToastContainer />
     </div>
   );
 }

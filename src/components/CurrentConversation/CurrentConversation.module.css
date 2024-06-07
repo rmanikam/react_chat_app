@@ -1,0 +1,121 @@
+.outerContainer {
+  border: 1px solid red;
+  height: 100%;
+  left: 500px;
+  top: 11px;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.chat_header {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 587px;
+  height: 62px;
+  width: 628px;
+  height: 70px;
+  background-color: #007bff;
+}
+
+.innerContainer {
+  display: flex;
+  margin-top: -65px;
+  margin-left: 13px;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.chat_body {
+  padding: 20px;
+  overflow: scroll;
+}
+
+.image_profile {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.image_text {
+  width: 186px;
+  display: flex;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+.image_user {
+  width: 218px;
+  display: flex;
+  overflow: hidden;
+  word-wrap: break-word;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.send {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+.send:hover {
+  background-color: #0056b3;
+}
+
+.send:active {
+  background-color: #003d7a;
+}
+
+.chat_footer {
+  width: 554px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  left: 510px;
+  position: fixed;
+}
+
+.loginUserContainer {
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userContainer {
+  margin-bottom: 11px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.text_profile {
+  margin-right: 10px;
+}
